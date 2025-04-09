@@ -1,0 +1,220 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    background-color: #ededed;
+    margin-top: 110px;
+}
+.header {
+    background-color: #1b3039;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px;
+    width: 100%;
+    box-sizing: border-box; /* Asegura que el padding no aumente el tamaño total */
+    position: fixed;
+    top: 0;
+    left: 0; /* Para asegurarse de que esté alineado con el borde izquierdo */
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: #eceff1;
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    padding: 0 20px;
+}
+
+.nav-links a {
+    font-size: 20px;
+    color: #eceff1;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 85px;
+        left: 0;
+        width: 100%;
+        background-color: #1b3039;
+        flex-direction: column;
+        text-align: center;
+        transition: max-height 0.3s ease-in-out;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        padding: 15px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+.header{
+    background-color: #1b3039;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 85px;
+    padding: 5px 2%;
+}
+
+.titulo-diario {
+    font-size: 28px;
+    color: #eceff1;
+    margin-left: auto;
+    font-weight: bold;
+}
+
+
+.header .nav-links{
+    list-style: none;
+}
+
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;    
+}
+
+.header .nav-links li a {
+    transition: 0.3s;
+    opacity: 0.5; 
+}
+
+.header .nav-links li a:hover {
+    opacity: 1;
+    transform: translateY(-5px);
+}
+
+
+
+
+.casa{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.in-flex{
+    flex: 1;
+    min-width: 250px; 
+    padding: 25px;
+    margin: 20px;
+    background-color: #fff;
+}
+
+.in-flex div{
+    padding: 25px;
+    background-color: #fff;
+    margin: 10px;
+}
+
+.titulo-seccion {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.imagen-seccion {
+    width: 90%;  /* Que ocupe casi todo el div, dejando margen */
+    margin: 10px auto;  /* Centrado y con espacio */
+    display: block;
+    border-radius: 8px;  /* Bordes suaves */
+}
+
+
+
+.footer {
+    position: relative;
+    background: #1b3039;
+    width: 100%;
+    min-height: 100px;
+    padding: 5px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: auto;
+    box-sizing: border-box;
+  }
+
+  
+  .social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 10px 5px;
+    flex-wrap: wrap;
+  }
+  
+  .icon-elem {
+    list-style: none;
+  }
+  
+  .icon {
+    color: white;
+    font-size: 32px;
+    display: inline-block;
+    margin: 0 10px;
+    transition: 0.5s;
+  }
+  
+  .icon:hover {
+    transform: translateY(-2px);
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+  }
+  
+  .menu-elem {
+    list-style: none;
+  }
+  .menu-icon {
+    color: white;
+    font-size: 20px;
+    display: inline-block;
+    text-decoration: none;
+    margin: 5px 10px;
+    opacity: 0.5;
+    transition: 0.3s;
+  }
+  
+  .menu-icon:hover {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
