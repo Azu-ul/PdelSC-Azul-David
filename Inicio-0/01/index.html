@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Diario Web Azul David</title>
+</head>
+
+<body>
+
+<!-- Header-->
+    <header class="header">
+        <button class="menu-toggle">&#9776;</button>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#principales">Principales</a></li>
+                <li><a href="#mundo">Mundo</a></li>
+                <li><a href="#opinion">Opinión</a></li>
+                <li><a href="#deporte">Deporte</a></li>
+                <li><a href="#arte">Arte & Espectáculos</a></li>
+                <li><a href="#virales">Virales</a></li>
+                <li><a href="#horoscopo">Horóscopo</a></li>
+                <li><a href="#clima">Clima</a></li>
+            </ul>
+        </nav>
+        <h1 class="titulo-diario">Diario Azul</h1>
+    </header>
+
+<!--Contenedor de todas las secciones-->
+    <div class="container">
+        <h2 style="text-align: center; font-size: 32px; font-weight: bold; margin-top: 20px;">Principales</h2>
+        <!--Principales-->
+        <section id="principales" class="casa">
+            <div class="in-flex">
+                <h2 class="titulo-seccion">Aldosivi se quedó con los penales y clasificó a la siguiente ronda</h2>
+                <p>Jorge Carranza se vistió en figura y le dio el pase al "Tiburon" a la siguiente ronda.</p>
+                <img src="/img/aldosivi.jpg" alt="Descripción de la imagen" class="imagen-seccion">
+            </div>
+            <div class="in-flex">
+                <h2 class="titulo-seccion">La temperatura continúa en ascenso: cuál será el clima de este jueves en Mar del Plata</h2>
+                <p>El Servicio Meteorológico Nacional brindó detalles de cómo estará el tiempo durante las próximas
+                    horas en la ciudad.</p>
+                <img src="/img/descarga (2).jpg" alt="Descripción de la imagen" class="imagen-seccion">
+            </div>
+        </section>
+        <hr style="color: black;">
+        <h2 style="text-align: center; font-size: 32px; font-weight: bold; margin-top: 20px;">Mundo</h2>
+        <!--Mundo-->
+        <section id="mundo" class="casa">
+            <div class="in-flex">
+                <h2 class="titulo-seccion">Insólito pedido de Francia a Estados Unidos: "Devuélvannos la Estatua de la
+                    Libertad”</h2>
+                <p>El pedido fue realizado por un miembro del partido francés de centroizquierda. </p>
+                <img src="/img/descarga.jpg" alt="Descripción de la imagen" class="imagen-seccion">
+            </div>
+            <div class="in-flex">
+                <h2 class="titulo-seccion">El Vaticano difundió la primera foto del Papa Francisco tras más de un mes de
+                    internación</h2>
+                <p>El Sumo Pontífice celebró la misa en la capilla privada del Hospital Gemelli, donde continúa
+                    internado. </p>
+                <img src="/img/descarga (1).jpg" alt="Descripción de la imagen" class="imagen-seccion">
+            </div>
+            <div class="in-flex">
+                <h2 class="titulo-seccion">Increíble: una adolescente virgen quedó embarazada por practicar sexo oral
+                </h2>
+                <p>El caso fue explicado por una prestigiosa revista científica: el esperma habría llegado al órgano reproductor a través de una herida de arma blanca que le provocó su ex novio.</p>
+                <img src="/img/descarga (3).jpg" alt="Descripción de la imagen" class="imagen-seccion">
+            </div>
+        </section>
+        </section>
+    </div> 
+
+    <hr style="color: black;">
+
+<!--Footer-->
+    <footer class="footer">
+        <ul class="social-icon">
+            <li class="icon-elem">
+                <a href="" class="icon">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+            </li>
+            <li class="icon-elem">
+                <a href="" class="icon">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+            </li>
+            <li class="icon-elem">
+                <a href="" class="icon">
+                    <ion-icon name="logo-whatsapp"></ion-icon>
+                </a>
+            </li>
+            <li class="icon-elem">
+                <a href="" class="icon">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+            </li>
+            <li class="icon-elem">
+                <a href="" class="icon">
+                    <ion-icon name="mail-outline"></ion-icon>
+                </a>
+            </li>
+        </ul>
+        <ul class="menu">
+            <li class="menu-elem">
+                <a href="" class="menu-icon"> Inicio </a>
+            </li>
+            <li class="menu-elem">
+                <a href="" class="menu-icon"> Equipo </a>
+            </li>
+            <li class="menu-elem">
+                <a href="" class="menu-icon"> Contacto </a>
+            </li>
+            <li class="menu-elem">
+                <a href="" class="menu-icon"> Video </a>
+            </li>
+            <li class="menu-elem">
+                <a href="" class="menu-icon"> Sobre Nosotros </a>
+            </li>
+        </ul>
+        <p class="text">2025. PdelSC</p>
+    </footer>
+
+<!--Iconos-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> 
+<!--Menu Desplegable-->
+    <script> 
+        
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.querySelector(".menu-toggle");
+            const navLinks = document.querySelector(".nav-links");
+
+            menuToggle.addEventListener("click", function () {
+                navLinks.classList.toggle("show");
+            });
+        });
+    </script>
+<!--Scroll-->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Hacer que el desplazamiento sea suave
+            const links = document.querySelectorAll('a[href^="#"]');
+
+            links.forEach(link => {
+                link.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute("href").substring(1);
+                    const targetElement = document.getElementById(targetId);
+
+                    // Ajuste del desplazamiento para quedar un poco más arriba
+                    const offset = 150; // Cambia este valor según necesites
+
+                    window.scrollTo({
+                        top: targetElement.offsetTop - offset,
+                        behavior: "smooth"
+                    });
+                });
+            });
+        });
+
+    </script>
+</body>
+
+</html>
